@@ -8,6 +8,24 @@
     <script src="https://kit.fontawesome.com/9ca08a6a82.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <!-- MOBILE NAV -->
+    <div class="mobile-nav-header" id="mobile-navigation">
+        <div class="mobile-nav-menu">
+            <h1 class="logo">Collabo.</h1>
+            <div class="menu-button-close" onclick="toggleMobile()">
+                <i class="fas fa-times fa-2x"></i>
+             </div>
+        </div>
+        
+        <nav class="mobile-nav">
+            <a href="" class="mobile--nav--item">Home</a>
+            <a href="" class="mobile--nav--item">About</a>
+            <a href="" class="mobile--nav--item">Services</a>
+            <a href="" class="mobile--nav--item">Contact</a>
+           
+        </nav>
+    </div>
+  
   <!-- HEAD -->
   <header>
     <div class="container">
@@ -18,7 +36,7 @@
             <a href="" class="nav--item">Services</a>
             <a href="" class="nav--item">Contact</a>
         </nav>
-        <div class="menu-button">
+        <div class="menu-button" onclick="toggleMobile()">
             <i class="fas fa-bars fa-2x"></i>
          </div>
         <button class="nav--button">get started</button>
