@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #F7F9F8;
+}
+
+a{
+    text-decoration: none;
+    margin-right:15px ;
+}
+.container{
+ max-width: 1100px;
+ margin: 0 auto;
+ padding: 20px;
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+}
+header .container .logo{
+    max-width: 250px;;
+    color: #EB3F27;
+    font-size: 54px;
+    flex:auto;
+}
+header .container  .navbar{
+    flex: 1;
+}
+header .container .nav--item{
+    font-size: 15px;
+    text-transform: uppercase;
+    color: rgb(82, 81, 81);
+    font-weight: 400;
+}
+header .container .nav--button{
+    border: none;
+    border-radius: 50px;
+    padding: 13px 26px;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight:600;
+    color: #fff;
+    background-color: #EB3F27;
+    cursor: pointer;
+}
+header .container .nav--button:focus{
+    outline: none;
+}
+header .container .nav--button:hover{
+    animation: animateButton 2s ease-in-out;
+}
+
+@keyframes animateButton{
+    0%{
+        background-color: #e95e4b;
+    }
+    100%{
+        background-color: #EB3F27;
+    }
+}
+
+/* MAIN */
+
+main .container{
+    display: flex;
+}
+main .container .intro--text{
+    flex:1;
+    padding: 0 24px;
+}
+
+main .container .intro--text .intro--text__headline{
+    font-size: 45px;
+    font-weight: 500;
+}
+ main .container .intro--image{
+    flex: 2;
+}
+
+main .container .intro__image{
+    width: 100%;
+}
+
+main .container .intro--text .cta--buton{
+    border: none;
+    border-radius: 50px;
+    padding: 13px 26px;
+    margin-top: 15px;
+    font-size: 16px;
+    background-color: #f05844;
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: 600;
+    cursor: pointer; 
+}
+main .container .intro--text .cta--buton:focus{
+    outline: none;
+}
+main .container .cta--buton .fas{
+    margin-right: .8em;
+    font-size: 24px;
+}
+footer .social{
+    display: flex;
+}
+
+footer .social--link{
+    margin: 0 20px;
+    color:#e95e4b;
+    font-size: 20px;
+    
+}
