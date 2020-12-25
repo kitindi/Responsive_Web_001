@@ -75,6 +75,10 @@ main .container .intro--text{
     padding: 0 24px;
 }
 
+ header .container .menu-button{
+     display: none;
+      
+    }
 main .container .intro--text .intro--text__headline{
     font-size: 45px;
     font-weight: 500;
@@ -115,4 +119,49 @@ footer .social--link{
     color:#e95e4b;
     font-size: 20px;
     
+}
+
+/* Small screen */
+
+@media only screen and (max-width:660px){
+    header .container{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 25px;
+        align-items: center;
+    }
+    header .container .logo{
+        display: none;
+    }
+    header .container  .navbar{
+        display: none;
+    }
+    header .container .menu-button{
+        display: block;
+    }
+    header .container .menu-button .fab{
+        font-weight: 700;
+        cursor: pointer;
+
+    }
+
+main .container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+main .container .intro--text{
+padding: 30px 0;
+}
+main .container .intro--image{
+    padding: 30px 0;
+}
+main .container .intro--text .intro--text__headline{
+    width: 300px;
+    padding-bottom:30px ;
+}
 }
